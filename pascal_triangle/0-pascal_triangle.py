@@ -8,21 +8,21 @@ def pascal_triangle(n):
     if n <= 0:
         return tri
 
-    index = 0
-    while index < n:
+    ind = 0
+    while ind < n:
         list_row = []
 
         list_index = 0
 
-        while list_index <= index:
-            if list_index == 0 or list_index == index:
+        while list_index <= ind:
+            if list_index == 0 or list_index == ind:
                 list_row.append(1)
             else:
-                sum = tri[index - 1][list_index - 1] + tri[index - 1][list_index]
+                sum = tri[ind - 1][list_index - 1] + tri[ind - 1][list_index]
                 list_row.append(sum)
             list_index = list_index + 1
 
         tri.append(list_row)
-        index = index + 1
+        ind = ind + 1
 
     return tri
