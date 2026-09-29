@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""Module for testing and completing pascal's triangle"""
 
 
 def pascal_triangle(n):
+    """function for loping through n for pascal's triangle"""
     tri = []
     if n <= 0:
         return tri
