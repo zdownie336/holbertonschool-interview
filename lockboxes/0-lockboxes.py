@@ -1,4 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/python3 leetcode
+"""Module for practising lockbox"""
+
+
 def canUnlockAll(boxes):
     seen = []
     flag = 0
